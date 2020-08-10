@@ -4,8 +4,8 @@
 #' @param start start date, e.g. "2018-03-01"
 #' @param verbose print additional information
 #'
-#' @export
 #' @import DBI RSQLite
+#' @export
 initializeDB<-function(name,start,verbose=FALSE)
 {
   start<-as.character(as.Date(start)-1 ) 
